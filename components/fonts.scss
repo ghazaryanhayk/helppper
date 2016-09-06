@@ -1,0 +1,7 @@
+@each $name, $weight in $mapFontWeights {
+	.f-w-#{$name} {font-weight:#{$weight}}
+}
+
+@each $name, $fontFamily in $mapFontFamilies {
+	.f-f-#{$name} {font-family:#{$fontFamily}}
+}
