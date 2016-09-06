@@ -1,4 +1,0 @@
-@each $name, $color in $mapColors {
-	.c-#{$name} {color:#{$color}}
-	.bg-#{$name} {background-color:#{$color}}
-}
