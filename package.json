@@ -1,9 +1,18 @@
 {
   "name": "helppper",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "author": "Hayk Ghazaryan <ghazaryan.h@gmail.com>",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/ghazaryanhayk/helppper.git"
+  },
+  "keywords": [
+	'css', 'helper', 'css helper', 'helppper', 'helper classes', 'sass'
+  ],
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
-  }
+  },
+  "license": "MIT"
 }
