@@ -15,7 +15,7 @@ gulp compileSass
 ```
 
 Voila!!!
-You have a helper.css with all helper classes.
+You have a **helppper.css** with all helper classes.
 
 Start your new project... 
 
