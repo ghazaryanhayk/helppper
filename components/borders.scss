@@ -1,0 +1,12 @@
+@each $sizeName, $size in $mapBorderSizes {
+	
+	@each $styleName, $style in $mapBorderStyles {
+		
+		@each $colorName, $color in $mapColors {
+			.b-#{$sizeName}-#{$styleName}-#{$colorName} {
+				border: #{$size} #{$style} #{$color};
+			}
+		}
+		
+	}
+}
