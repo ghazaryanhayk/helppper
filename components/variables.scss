@@ -40,6 +40,7 @@ $mapFontFamilies: (
  .bg-<key> {
 	background-color: <value>
  }
+ 
 \***************************/
 
 $mapColors: (
@@ -49,3 +50,80 @@ $mapColors: (
 	black:	 '#000000',
 	white:	 '#ffffff'
 );
+
+/***************************\
+  BORDER SIZES           
+*****************************
+ .brd-<key> {            
+    border-width: <value>  
+ }                       
+\***************************/
+
+$mapBorderSizes: (
+	thin: '1px',
+	normal: '2px',
+	thick: '3px'
+);
+
+/***************************\
+  BORDER STYLES           
+*****************************
+ .brd-<key> {            
+    border-style: <value>  
+ }                       
+\***************************/
+
+$mapBorderStyles: (
+	solid: 'solid',
+	dashed: 'dashed',
+	dotted: 'dotted'
+);
+
+/***************************\
+  BORDER RADIUS           
+*****************************
+ .brd-<key> {            
+    border-radius: <value>  
+ }                       
+\***************************/
+
+$mapBorderRadiuses: (
+	solid: 'solid',
+	dashed: 'dashed',
+	dotted: 'dotted'
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
