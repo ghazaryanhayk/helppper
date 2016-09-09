@@ -88,11 +88,39 @@ $mapBorderStyles: (
 \***************************/
 
 $mapBorderRadiuses: (
-	solid: 'solid',
-	dashed: 'dashed',
-	dotted: 'dotted'
+	small: '3px',
+	normal: '4px',
+	large: '5px'
 );
 
+
+/***************************\
+  PADDINGS
+*****************************
+ 
+// description goes here
+ 
+\***************************/
+
+$mapPaddingSetup: (
+	start: 10,
+	end: 30,
+	step: 5
+);
+
+/***************************\
+  MARGINS
+*****************************
+ 
+// description goes here
+ 
+\***************************/
+
+$mapMarginSetup: (
+	start: 10,
+	end: 30,
+	step: 5
+);
 
 
 

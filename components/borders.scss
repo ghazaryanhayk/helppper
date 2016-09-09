@@ -9,4 +9,10 @@
 		}
 		
 	}
+};
+
+@each $radiusName, $radius in $mapBorderRadiuses {
+	.b-rad-#{$radiusName} {
+		border-radius: #{$radius};
+	}
 }

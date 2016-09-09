@@ -1,0 +1,17 @@
+$start: map-get($mapMarginSetup, 'start');
+$end: 	map-get($mapMarginSetup, 'end');
+$step: 	map-get($mapMarginSetup, 'step');
+
+$length: ($end - $start) / $step;
+
+@for $i from 0 to $length {
+	$stepValue: ($step * $i) + 10;
+	@if  $stepValue >= $start and $stepValue <= $end {
+		$value: $stepValue * 1px;
+		.m-a-#{$stepValue} {margin: $value}
+		.m-t-#{$stepValue} {margin-top: $value}
+		.m-l-#{$stepValue} {margin-left: $value}
+		.m-r-#{$stepValue} {margin-right: $value}
+		.m-b-#{$stepValue} {margin-bottom: $value}
+	}
+}
