@@ -1,0 +1,7 @@
+@each $name, $value in $mapTextAlign {
+	.t-#{$name} {text-align: #{$value}}
+}
+
+@each $name, $value in $mapTextDecoration {
+	.t-d-#{$name} {text-decoration: #{$value}}
+}

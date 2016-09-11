@@ -1,27 +1,27 @@
 
 /***************************\
-  FONT WEIGHTS           
+  FONT WEIGHTS
 *****************************
- .f-w-<key> {            
-    font-weight:<value>  
- }                       
+ .f-w-<key> {
+    font-weight:<value>
+ }
 \***************************/
 
 $mapFontWeights: (
-	thin:	 100, 
-	light:	 300, 
-	normal:	 400, 
-	semibold:600, 
+	thin:	 100,
+	light:	 300,
+	normal:	 400,
+	semibold:600,
 	bold:	 700
 );
 
 
 /***************************\
-  FONT FAMILIES           
+  FONT FAMILIES
 *****************************
- .f-f-<key> {            
-    font-family: <value>  
- }                       
+ .f-f-<key> {
+    font-family: <value>
+ }
 \***************************/
 
 $mapFontFamilies: (
@@ -31,16 +31,16 @@ $mapFontFamilies: (
 
 
 /***************************\
-  COLORS           
+  COLORS
 *****************************
- .c-<key> {            
-    color: <value>  
+ .c-<key> {
+    color: <value>
  }
- 
+
  .bg-<key> {
 	background-color: <value>
  }
- 
+
 \***************************/
 
 $mapColors: (
@@ -52,11 +52,11 @@ $mapColors: (
 );
 
 /***************************\
-  BORDER SIZES           
+  BORDER SIZES
 *****************************
- .brd-<key> {            
-    border-width: <value>  
- }                       
+ .brd-<key> {
+    border-width: <value>
+ }
 \***************************/
 
 $mapBorderSizes: (
@@ -66,11 +66,11 @@ $mapBorderSizes: (
 );
 
 /***************************\
-  BORDER STYLES           
+  BORDER STYLES
 *****************************
- .brd-<key> {            
-    border-style: <value>  
- }                       
+ .brd-<key> {
+    border-style: <value>
+ }
 \***************************/
 
 $mapBorderStyles: (
@@ -80,11 +80,11 @@ $mapBorderStyles: (
 );
 
 /***************************\
-  BORDER RADIUS           
+  BORDER RADIUS
 *****************************
- .brd-<key> {            
-    border-radius: <value>  
- }                       
+ .brd-<key> {
+    border-radius: <value>
+ }
 \***************************/
 
 $mapBorderRadiuses: (
@@ -97,9 +97,9 @@ $mapBorderRadiuses: (
 /***************************\
   PADDINGS
 *****************************
- 
+
 // description goes here
- 
+
 \***************************/
 
 $mapPaddingSetup: (
@@ -111,9 +111,9 @@ $mapPaddingSetup: (
 /***************************\
   MARGINS
 *****************************
- 
+
 // description goes here
- 
+
 \***************************/
 
 $mapMarginSetup: (
@@ -123,35 +123,43 @@ $mapMarginSetup: (
 );
 
 
+/***************************\
+  DISPLAYS
+*****************************
+
+// description goes here
+
+\***************************/
+$mapDisplayValues: (
+	i: inline,
+	b: block,
+	f: flex,
+	ib: inline-block
+);
 
 
+/***************************\
+  TEXT ALIGNMENTS
+*****************************
 
+// description goes here
 
+\***************************/
+$mapTextAlign: (
+	l: left,
+	r: right,
+	c: center,
+	j: justify
+);
 
+/***************************\
+  TEXT DECORATIONS
+*****************************
 
+// description goes here
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\***************************/
+$mapTextDecoration: (
+	n: none,
+	u: underline
+);
