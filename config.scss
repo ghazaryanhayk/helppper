@@ -1,0 +1,165 @@
+
+/***************************\
+  FONT WEIGHTS
+*****************************
+ .f-w-<key> {
+    font-weight:<value>
+ }
+\***************************/
+
+$mapFontWeights: (
+	thin:		100,
+	light:		300,
+	normal:		400,
+	semibold:	600,
+	bold:		700
+);
+
+
+/***************************\
+  FONT FAMILIES
+*****************************
+ .f-f-<key> {
+    font-family: <value>
+ }
+\***************************/
+
+$mapFontFamilies: (
+	arvo:	"'Arvo', serif",
+	roboto:	"'Roboto', sans-serif"
+);
+
+
+/***************************\
+  COLORS
+*****************************
+ .c-<key> {
+    color: <value>
+ }
+
+ .bg-<key> {
+	background-color: <value>
+ }
+
+\***************************/
+
+$mapColors: (
+	success:'#00ff00',
+	danger:	'#ff0000',
+	info:	'#0000ff',
+	black:	'#000000',
+	white:	'#ffffff'
+);
+
+/***************************\
+  BORDER SIZES
+*****************************
+ .brd-<key> {
+	border-width: <value>
+ }
+\***************************/
+
+$mapBorderSizes: (
+	thin: '1px',
+	normal: '2px',
+	thick: '3px'
+);
+
+/***************************\
+  BORDER STYLES
+*****************************
+ .brd-<key> {
+    border-style: <value>
+ }
+\***************************/
+
+$mapBorderStyles: (
+	solid: 'solid',
+	dashed: 'dashed',
+	dotted: 'dotted'
+);
+
+/***************************\
+  BORDER RADIUS
+*****************************
+ .brd-<key> {
+    border-radius: <value>
+ }
+\***************************/
+
+$mapBorderRadiuses: (
+	small:	'3px',
+	normal:	'4px',
+	large:	'5px'
+);
+
+
+/***************************\
+  PADDINGS
+*****************************
+
+// description goes here
+
+\***************************/
+
+$mapPaddingSetup: (
+	start:	10,
+	end:	30,
+	step:	5
+);
+
+/***************************\
+  MARGINS
+*****************************
+
+// description goes here
+
+\***************************/
+
+$mapMarginSetup: (
+	start:	10,
+	end:	30,
+	step:	5
+);
+
+
+/***************************\
+  DISPLAYS
+*****************************
+
+// description goes here
+
+\***************************/
+$mapDisplayValues: (
+	i: inline,
+	b: block,
+	f: flex,
+	ib: inline-block
+);
+
+
+/***************************\
+  TEXT ALIGNMENTS
+*****************************
+
+// description goes here
+
+\***************************/
+$mapTextAlign: (
+	l: left,
+	r: right,
+	c: center,
+	j: justify
+);
+
+/***************************\
+  TEXT DECORATIONS
+*****************************
+
+// description goes here
+
+\***************************/
+$mapTextDecoration: (
+	n: none,
+	u: underline
+);
