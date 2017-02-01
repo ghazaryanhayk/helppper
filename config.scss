@@ -1,11 +1,13 @@
 
-/***************************\
-  FONT WEIGHTS
-*****************************
- .f-w-<key> {
-    font-weight:<value>
- }
-\***************************/
+/// Creates font weights helpers for use
+/// @type Map
+/// @example
+/// // generated helpppers: .f-w-<key> {font-weight: <value>}
+///
+/// .f-w-thin {
+///		font-weight: 100;
+///	}
+///
 
 $mapFontWeights: (
 	thin:		100,
@@ -16,13 +18,15 @@ $mapFontWeights: (
 );
 
 
-/***************************\
-  FONT FAMILIES
-*****************************
- .f-f-<key> {
-    font-family: <value>
- }
-\***************************/
+/// Creates font families helpers for use
+/// @type Map
+/// @example
+/// // generated helpppers: .f-f-<key> {font-weight: <value>}
+///
+/// .f-w-arvo {
+///		font-weight: "'Arvo', serif";
+///	}
+///
 
 $mapFontFamilies: (
 	arvo:	"'Arvo', serif",

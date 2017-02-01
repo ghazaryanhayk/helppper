@@ -14,6 +14,6 @@ gulp.task('compileSass', function () {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest('./'));
-})
+});
 
 gulp.task('default', function(){});
