@@ -23,8 +23,8 @@ $mapFontWeights: (
 /// @example
 /// // generated helpppers: .f-f-<key> {font-weight: <value>}
 ///
-/// .f-w-arvo {
-///		font-weight: "'Arvo', serif";
+/// .f-f-arvo {
+///		font-family: "'Arvo', serif";
 ///	}
 ///
 
@@ -34,18 +34,22 @@ $mapFontFamilies: (
 );
 
 
-/***************************\
-  COLORS
-*****************************
- .c-<key> {
-    color: <value>
- }
-
- .bg-<key> {
-	background-color: <value>
- }
-
-\***************************/
+/// Creates text color and background color helpers for use <br/>
+/// Also will affect on border generation
+/// @type Map
+/// @example
+/// // generated helpppers:
+/// // .c-<key> {color: <value>}
+/// // .bg-<key> {background-color: <value>}
+///
+/// .c-success {
+///		color: #00ff00;
+///	}
+///
+/// .bg-success {
+///		background-color: #00ff00;
+///	}
+///
 
 $mapColors: (
 	success:'#00ff00',
@@ -62,6 +66,17 @@ $mapColors: (
 	border-width: <value>
  }
 \***************************/
+
+
+/// Creates border width helpers for use
+/// @type Map
+/// @example
+/// // generated helpppers: .f-w-<key> {font-weight: <value>}
+///
+/// .f-w-thin {
+///		font-weight: 100;
+///	}
+///
 
 $mapBorderSizes: (
 	thin: '1px',
@@ -98,13 +113,6 @@ $mapBorderRadiuses: (
 );
 
 
-/***************************\
-  PADDINGS
-*****************************
-
-// description goes here
-
-\***************************/
 
 $mapPaddingSetup: (
 	start:	10,
@@ -112,13 +120,6 @@ $mapPaddingSetup: (
 	step:	5
 );
 
-/***************************\
-  MARGINS
-*****************************
-
-// description goes here
-
-\***************************/
 
 $mapMarginSetup: (
 	start:	10,
@@ -127,13 +128,6 @@ $mapMarginSetup: (
 );
 
 
-/***************************\
-  DISPLAYS
-*****************************
-
-// description goes here
-
-\***************************/
 $mapDisplayValues: (
 	i: inline,
 	b: block,
@@ -142,13 +136,6 @@ $mapDisplayValues: (
 );
 
 
-/***************************\
-  TEXT ALIGNMENTS
-*****************************
-
-// description goes here
-
-\***************************/
 $mapTextAlign: (
 	l: left,
 	r: right,
@@ -156,13 +143,7 @@ $mapTextAlign: (
 	j: justify
 );
 
-/***************************\
-  TEXT DECORATIONS
-*****************************
 
-// description goes here
-
-\***************************/
 $mapTextDecoration: (
 	n: none,
 	u: underline
