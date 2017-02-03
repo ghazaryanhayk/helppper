@@ -9,7 +9,7 @@ Clone or download files.
 npm install
 ```
 
-Set your values in variables.scss file and then
+Set your values in config.scss file and then
 ```
 gulp compileSass
 ```
