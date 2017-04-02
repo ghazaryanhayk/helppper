@@ -16,4 +16,6 @@ gulp.task('compileSass', function () {
 		.pipe(gulp.dest('./'));
 });
 
-gulp.task('default', function(){});
+gulp.task('default', function(){
+	console.log('Empty task :)');
+});

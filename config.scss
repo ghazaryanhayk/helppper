@@ -148,3 +148,9 @@ $mapTextDecoration: (
 	n: none,
 	u: underline
 );
+
+$mapBreakpoints: (
+	mobile: '300px',
+	tablet: '600px',
+	desktop: '1024px'
+)
