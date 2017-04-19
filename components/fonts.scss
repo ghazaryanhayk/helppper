@@ -5,3 +5,7 @@
 @each $name, $fontFamily in $mapFontFamilies {
 	.f-f-#{$name} {font-family:#{$fontFamily}}
 }
+
+@each $name, $fontSize in $mapFontSizes {
+	.f-s-#{$name} {font-size: #{$fontSize}px}
+}

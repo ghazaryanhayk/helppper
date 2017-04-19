@@ -1,5 +1,4 @@
-
-/// Creates font weights helpers for use
+/// Creates font weights helpers
 /// @type Map
 /// @example
 /// // generated helpppers: .f-w-<key> {font-weight: <value>}
@@ -10,15 +9,14 @@
 ///
 
 $mapFontWeights: (
-	thin:		100,
-	light:		300,
-	normal:		400,
-	semibold:	600,
-	bold:		700
+		thin: 100,
+		light: 300,
+		normal: 400,
+		semibold: 600,
+		bold: 700
 );
 
-
-/// Creates font families helpers for use
+/// Creates font families helpers
 /// @type Map
 /// @example
 /// // generated helpppers: .f-f-<key> {font-weight: <value>}
@@ -29,12 +27,11 @@ $mapFontWeights: (
 ///
 
 $mapFontFamilies: (
-	arvo:	"'Arvo', serif",
-	roboto:	"'Roboto', sans-serif"
+		arvo: "'Arvo', serif",
+		roboto: "'Roboto', sans-serif"
 );
 
-
-/// Creates text color and background color helpers for use <br/>
+/// Creates text color and background color helpers <br/>
 /// Also will affect on border generation
 /// @type Map
 /// @example
@@ -51,12 +48,19 @@ $mapFontFamilies: (
 ///	}
 ///
 
+// Please use http://chir.ag/projects/name-that-color/ for color names
 $mapColors: (
-	success:'#00ff00',
-	danger:	'#ff0000',
-	info:	'#0000ff',
-	black:	'#000000',
-	white:	'#ffffff'
+		dark-gray: '#484848',
+		ash-gray: '#6E777D',
+		oslo-gray: '#899398',
+		silver: '#BBC1C4',
+		platinum: '#E5E5E5',
+		light-gray: '#C0C0CA',
+		blue: '#296095',
+		white: '#ffffff',
+		mulberry: '#CB4375',
+		green: '#6FAE2F',
+		red: '#EF0B46'
 );
 
 /***************************\
@@ -66,7 +70,6 @@ $mapColors: (
 	border-width: <value>
  }
 \***************************/
-
 
 /// Creates border width helpers for use
 /// @type Map
@@ -79,9 +82,9 @@ $mapColors: (
 ///
 
 $mapBorderSizes: (
-	thin: '1px',
-	normal: '2px',
-	thick: '3px'
+		thin: '1px',
+		normal: '2px',
+		thick: '3px'
 );
 
 /***************************\
@@ -92,10 +95,15 @@ $mapBorderSizes: (
  }
 \***************************/
 
+/// Creates border style helpers
+/// @type Map
+/// @example
+/// // generated helpppers: .brd-<key> {  }
+
 $mapBorderStyles: (
-	solid: 'solid',
-	dashed: 'dashed',
-	dotted: 'dotted'
+		solid: 'solid',
+		dashed: 'dashed',
+		dotted: 'dotted'
 );
 
 /***************************\
@@ -107,44 +115,45 @@ $mapBorderStyles: (
 \***************************/
 
 $mapBorderRadiuses: (
-	small:	'3px',
-	normal:	'4px',
-	large:	'5px'
+		small: '3px',
+		normal: '4px',
+		large: '5px'
 );
-
-
 
 $mapPaddingSetup: (
-	start:	10,
-	end:	30,
-	step:	5
+		start: 10,
+		end: 30,
+		step: 5
 );
-
 
 $mapMarginSetup: (
-	start:	10,
-	end:	30,
-	step:	5
+		start: 10,
+		end: 30,
+		step: 5
 );
-
 
 $mapDisplayValues: (
-	i: inline,
-	b: block,
-	f: flex,
-	ib: inline-block
+		i: inline,
+		b: block,
+		f: flex,
+		ib: inline-block
 );
-
 
 $mapTextAlign: (
-	l: left,
-	r: right,
-	c: center,
-	j: justify
+		l: left,
+		r: right,
+		c: center,
+		j: justify
 );
 
-
 $mapTextDecoration: (
-	n: none,
-	u: underline
+		n: none,
+		u: underline
+);
+
+$mapFontSizes: (
+		tiny: 11,
+		small: 12,
+		medium: 14,
+		large: 18
 );
