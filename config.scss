@@ -157,3 +157,9 @@ $mapFontSizes: (
 		medium: 14,
 		large: 18
 );
+
+$mapBreakpoints: (
+	mobile: '300px',
+	tablet: '600px',
+	desktop: '1024px'
+)
