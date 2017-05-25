@@ -1,4 +1,5 @@
 @import 'config';
+@import 'mixins';
 @import 'components/fonts';
 @import 'components/colors';
 @import 'components/borders';
@@ -6,3 +7,5 @@
 @import 'components/margins';
 @import 'components/displays';
 @import 'components/texts';
+
+@import "test";

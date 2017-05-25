@@ -1,3 +1,4 @@
+/*
 /// Creates font weights helpers
 /// @type Map
 /// @example
@@ -7,7 +8,7 @@
 ///		font-weight: 100;
 ///	}
 ///
-
+*/
 $mapFontWeights: (
 		thin: 100,
 		light: 300,
@@ -16,6 +17,7 @@ $mapFontWeights: (
 		bold: 700
 );
 
+/*
 /// Creates font families helpers
 /// @type Map
 /// @example
@@ -25,12 +27,12 @@ $mapFontWeights: (
 ///		font-family: "'Arvo', serif";
 ///	}
 ///
-
+*/
 $mapFontFamilies: (
-		arvo: "'Arvo', serif",
-		roboto: "'Roboto', sans-serif"
+		open-sans: "'OpenSans', 'Open Sans'"
 );
 
+/*
 /// Creates text color and background color helpers <br/>
 /// Also will affect on border generation
 /// @type Map
@@ -47,7 +49,7 @@ $mapFontFamilies: (
 ///		background-color: #00ff00;
 ///	}
 ///
-
+*/
 // Please use http://chir.ag/projects/name-that-color/ for color names
 $mapColors: (
 		dark-gray: '#484848',
@@ -70,7 +72,7 @@ $mapColors: (
 	border-width: <value>
  }
 \***************************/
-
+/*
 /// Creates border width helpers for use
 /// @type Map
 /// @example
@@ -80,7 +82,7 @@ $mapColors: (
 ///		font-weight: 100;
 ///	}
 ///
-
+*/
 $mapBorderSizes: (
 		thin: '1px',
 		normal: '2px',
@@ -94,12 +96,12 @@ $mapBorderSizes: (
     border-style: <value>
  }
 \***************************/
-
+/*
 /// Creates border style helpers
 /// @type Map
 /// @example
 /// // generated helpppers: .brd-<key> {  }
-
+*/
 $mapBorderStyles: (
 		solid: 'solid',
 		dashed: 'dashed',
@@ -115,21 +117,22 @@ $mapBorderStyles: (
 \***************************/
 
 $mapBorderRadiuses: (
-		small: '3px',
-		normal: '4px',
-		large: '5px'
+		small: '4px',
+		normal: '5px',
+		large: '6px',
+		extra-large: '12px'
 );
 
 $mapPaddingSetup: (
-		start: 10,
-		end: 30,
-		step: 5
+		start: 0,
+		end: 40,
+		step: 2
 );
 
 $mapMarginSetup: (
-		start: 10,
-		end: 30,
-		step: 5
+		start: 0,
+		end: 40,
+		step: 2
 );
 
 $mapDisplayValues: (
@@ -159,7 +162,8 @@ $mapFontSizes: (
 );
 
 $mapBreakpoints: (
-	mobile: '300px',
+	portrait: '300px',
+	landscape: '450px',
 	tablet: '600px',
 	desktop: '1024px'
 )

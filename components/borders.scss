@@ -7,12 +7,17 @@
 				border: #{$size} #{$style} #{$color};
 			}
 		}
-		
+
 	}
 };
 
 @each $radiusName, $radius in $mapBorderRadiuses {
 	.b-rad-#{$radiusName} {
+		border-radius: #{$radius};
+	}
+
+	$className: b-rad-#{$radiusName};
+	@include apply-for-all-breakpoints($className) {
 		border-radius: #{$radius};
 	}
 }

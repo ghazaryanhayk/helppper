@@ -4,9 +4,9 @@ $step: 	map-get($mapPaddingSetup, 'step');
 
 $length: ($end - $start) / $step;
 
-@for $i from 0 to $length {
-	$stepValue: ($step * $i) + 10;
-	@if  $stepValue >= $start and $stepValue <= $end {
+@for $i from 0 to ($length + 1) {
+	$stepValue: ($step * $i);
+	@if  $stepValue >= $start and $end >= $stepValue {
 		$value: $stepValue * 1px;
 		.p-a-#{$stepValue} {padding: $value}
 		.p-l-#{$stepValue} {padding-left: $value}

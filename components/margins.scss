@@ -4,8 +4,8 @@ $step: map-get($mapMarginSetup, 'step');
 
 $length: ($end - $start) / $step;
 
-@for $i from 0 to $length {
-	$stepValue: ($step * $i) + 10;
+@for $i from 0 to ($length + 1) {
+	$stepValue: ($step * $i);
 	@if $stepValue >= $start and $stepValue <= $end {
 		$value: $stepValue * 1px;
 		.m-a-#{$stepValue} {

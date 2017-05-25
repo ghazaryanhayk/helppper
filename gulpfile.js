@@ -12,7 +12,7 @@ var paths = {
 gulp.task('compileSass', function () {
 	return gulp.src(paths.scss)
 		.pipe(sass().on('error', sass.logError))
-		.pipe(cleanCSS())
+		//.pipe(cleanCSS())
 		.pipe(gulp.dest('./'));
 });
 
