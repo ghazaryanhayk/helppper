@@ -1,0 +1,5 @@
+@each $sizingName, $size in $mapBoxSizing {
+	.b-sizing-#{$sizingName} {
+		box-sizing: #{$size};
+	}
+}

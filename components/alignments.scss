@@ -1,0 +1,3 @@
+@each $name, $value in $mapVerticalAlign {
+	.v-a-#{$name} {vertical-align: #{$value}}
+}

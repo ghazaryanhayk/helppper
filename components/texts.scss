@@ -5,3 +5,7 @@
 @each $name, $value in $mapTextDecoration {
 	.t-d-#{$name} {text-decoration: #{$value}}
 }
+
+@each $name, $value in $mapTextTransform {
+	.t-t-#{$name} {text-transform: #{$value}}
+}

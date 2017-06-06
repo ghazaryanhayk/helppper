@@ -1,0 +1,67 @@
+$defaultBreakpoint: root;
+$currentBreakpoint: $defaultBreakpoint;
+
+$placeholders: ();
+
+@mixin breakpoint($breakpoint) {
+	$breakpointValues: map-get($mapBreakpoints, $breakpoint);
+	$start: map-get($breakpointValues, 'start');
+	$end: map-get($breakpointValues, 'end');
+
+	//@if $value != null {
+		$currentBreakpoint: $breakpoint !global;
+		@media (min-width: $start) and (max-width: $end) { @content; }
+		$currentBreakpoint: $defaultBreakpoint !global;
+	//}
+	//@else {
+	//	@warn "Invalid breakpoint `#{$breakpoint}`. ";
+	//}
+}
+
+@mixin placeholder($name) {
+	@if not index($placeholders, $name) {
+		$placeholders: append($placeholders, $name) !global;
+
+		@at-root {
+			@each $breakpoint, $value in $mapBreakpoints {
+				@media (min-width: $value) {
+					.#{$name}-#{$breakpoint} {
+						@content
+					}
+				}
+			}
+
+			.#{$name}-#{$defaultBreakpoint} {
+				@content;
+			}
+		}
+	}
+	@else {
+		@warn "Placeholder `#{$name}` already exists";
+	}
+}
+
+@mixin _($name) {
+	@extend .#{$name}-#{$currentBreakpoint};
+}
+
+@include placeholder('clear') {
+	clear: both;
+}
+
+//.test {
+//	@include _(clear);
+//}
+
+//.test1 {
+//	@include breakpoint(tablet) {
+//		@include _(clear);
+//	}
+//}
+
+
+.Davo {
+	@include breakpoint(portrait) {
+
+	}
+}

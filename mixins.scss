@@ -1,0 +1,9 @@
+@mixin apply-for-all-breakpoints ($className) {
+	@each $name, $value in $mapBreakpoints {
+		.#{$className}-#{$name} {
+			@media screen and (min-width: $value) {
+				@content;
+			}
+		}
+	}
+}

@@ -1,14 +1,16 @@
-/*
-/// Creates font weights helpers
+/// Includes all `font-weight` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
 /// @type Map
 /// @example
-/// // generated helpppers: .f-w-<key> {font-weight: <value>}
+/// // generated helpers: .f-w-<key> {font-weight: <value>}
 ///
-/// .f-w-thin {
-///		font-weight: 100;
+/// .f-w-regular {
+///		font-weight: 400;
 ///	}
 ///
-*/
 $mapFontWeights: (
 		thin: 100,
 		light: 300,
@@ -17,40 +19,44 @@ $mapFontWeights: (
 		bold: 700
 );
 
-/*
-/// Creates font families helpers
+/// Includes all `font-family` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
 /// @type Map
 /// @example
-/// // generated helpppers: .f-f-<key> {font-weight: <value>}
+/// // generated helpers: .f-f-<key> {font-weight: <value>}
 ///
-/// .f-f-arvo {
-///		font-family: "'Arvo', serif";
+/// .f-f-open-sans {
+///		font-open-sans: "'OpenSans', 'Open Sans', sans-serif";
 ///	}
 ///
-*/
 $mapFontFamilies: (
 		open-sans: "'OpenSans', 'Open Sans'"
 );
 
-/*
-/// Creates text color and background color helpers <br/>
-/// Also will affect on border generation
+/// Includes all `color` values used in application <br/>
+/// Also will affect on border and background generation <br />
+/// Please use <a target="_blank" href="http://chir.ag/projects/name-that-color/">http://chir.ag/projects/name-that-color/</a> for color names
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
 /// @type Map
 /// @example
-/// // generated helpppers:
+/// // generated helpers:
 /// // .c-<key> {color: <value>}
 /// // .bg-<key> {background-color: <value>}
 ///
-/// .c-success {
-///		color: #00ff00;
+/// .c-green {
+///		color: #6FAE2F;
 ///	}
 ///
-/// .bg-success {
-///		background-color: #00ff00;
+/// .bg-green {
+///		background-color: #6FAE2F;
 ///	}
 ///
-*/
-// Please use http://chir.ag/projects/name-that-color/ for color names
 $mapColors: (
 		dark-gray: '#484848',
 		ash-gray: '#6E777D',
@@ -65,57 +71,56 @@ $mapColors: (
 		red: '#EF0B46'
 );
 
-/***************************\
-  BORDER SIZES
-*****************************
- .brd-<key> {
-	border-width: <value>
- }
-\***************************/
-/*
-/// Creates border width helpers for use
+/// Includes all `border-width` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
 /// @type Map
 /// @example
-/// // generated helpppers: .f-w-<key> {font-weight: <value>}
+/// // generated helpers: .f-w-<key> {font-weight: <value>}
 ///
 /// .f-w-thin {
-///		font-weight: 100;
+///		font-weight: 1px;
 ///	}
 ///
-*/
 $mapBorderSizes: (
 		thin: '1px',
 		normal: '2px',
 		thick: '3px'
 );
 
-/***************************\
-  BORDER STYLES
-*****************************
- .brd-<key> {
-    border-style: <value>
- }
-\***************************/
-/*
-/// Creates border style helpers
+/// Includes all `border-style` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
 /// @type Map
 /// @example
-/// // generated helpppers: .brd-<key> {  }
-*/
+/// // generated helpers: .b-(size)-<key>-(color) { border: (size)px <value> (color) }
+///
+/// .b-thin-solid-green {
+/// 	border: 1px solid #6FAE2F;
+/// }
+///
 $mapBorderStyles: (
 		solid: 'solid',
 		dashed: 'dashed',
 		dotted: 'dotted'
 );
 
-/***************************\
-  BORDER RADIUS
-*****************************
- .brd-<key> {
-    border-radius: <value>
- }
-\***************************/
-
+/// Includes all `border-radius` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .b-rad-<key> {border-radius: <value>}
+/// .b-rad-small {
+/// 	border-radius: 4px;
+/// }
+///
 $mapBorderRadiuses: (
 		small: '4px',
 		normal: '5px',
@@ -123,18 +128,67 @@ $mapBorderRadiuses: (
 		extra-large: '12px'
 );
 
+/// Includes all `border-sizing` values used in application
+///
+/// @group Helper
+/// @author Zara Ohanyan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .b-sizing-<key> {border-sizing: <value>}
+/// .b-sizing-b {
+/// 	box-sizing: border-box;
+/// }
+///
+$mapBoxSizing: (
+		b: 'border-box',
+		i: 'initial'
+);
+
+/// Includes first size (`start`), last size (`end`) and difference (`step`) between sizes of padding values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .p-a-<value> {padding: <value>px}, .p-l-<value> {padding-left: <value>px},...
+/// .p-a-0 { padding: 0px; }
+/// .p-l-0 { padding-left: 0px; }
+///
 $mapPaddingSetup: (
 		start: 0,
 		end: 40,
 		step: 2
 );
 
+/// Includes first size (`start`), last size (`end`) and difference (`step`) between sizes of margin values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .m-a-<value> {margin: <value>px}, .m-l-<value> {margin-left: <value>px},...
+/// .m-a-0 { margin: 0px; }
+/// .m-l-0 { margin-left: 0px; }
+///
 $mapMarginSetup: (
 		start: 0,
 		end: 40,
 		step: 2
 );
 
+/// Includes all `display` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .d-<key> {display: <value>}
+/// .d-i {display: inline}
+///
 $mapDisplayValues: (
 		i: inline,
 		b: block,
@@ -142,6 +196,31 @@ $mapDisplayValues: (
 		ib: inline-block
 );
 
+/// Includes all `cursor` values used in application
+///
+/// @group Helper
+/// @author Zara Ohanyan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .cursor-<key> {cursor: <value>}
+/// .cursor-p {cursor: pointer}
+///
+$mapCursor: (
+		p: pointer,
+		na: not-allowed
+);
+
+/// Includes all `text-align` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .t-<key> {text-align: <value>}
+/// .t-l {text-align: left}
+///
 $mapTextAlign: (
 		l: left,
 		r: right,
@@ -149,11 +228,48 @@ $mapTextAlign: (
 		j: justify
 );
 
+/// Includes all `text-decoration` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .t-d-<key> {text-decoration: <value>}
+/// .t-d-n {text-decoration: none}
+///
 $mapTextDecoration: (
 		n: none,
 		u: underline
 );
 
+/// Includes all `text-transform` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .t-t-<key> {text-transform: <value>}
+/// .t-t-up {text-transform: uppercase}
+///
+$mapTextTransform: (
+		up: "uppercase",
+		cap: "capitalize",
+		low: "lowercase",
+		none: "none"
+);
+
+/// Includes all `font-size` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .f-s-<key> {font-size: <value>px}
+/// .f-s-tiny {font-size: 11px}
+///
 $mapFontSizes: (
 		tiny: 11,
 		small: 12,
@@ -161,9 +277,25 @@ $mapFontSizes: (
 		large: 18
 );
 
+/// Includes all `vertical-align` values used in application
+///
+/// @group Helper
+/// @author Hayk Ghazaryan
+///
+/// @type Map
+/// @example
+/// // generated helpers: .v-a-<key> {font-size: <value>}
+/// .v-a-mid {vertical-align: middle}
+///
+$mapVerticalAlign: (
+		mid: "middle"
+);
+
+
+
 $mapBreakpoints: (
-	portrait: '300px',
-	landscape: '450px',
-	tablet: '600px',
-	desktop: '1024px'
+	portrait: 	(start: null, end: '449px'),
+	landscape: 	(start: '450px',end: '559px'),
+	tablet: 	(start: '600px',end: '1023px'),
+	desktop: 	(start: '1024px',end: null)
 )
